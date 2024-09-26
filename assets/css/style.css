@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Vetrino';
+    src: url(../fonts/Vetrino.otf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url(../fonts/Manrope-Medium.ttf);
+    font-weight: 500;
+}
+
+body {
+    background-color: #f6f6f6;
+    font-family: 'Vetrino';
+}
+
+.section {
+    max-width: 1420px;
+    margin: 0 auto;
+}
+
+/* header start */
+.header-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.header-nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.header-nav a {
+    letter-spacing: 3px;
+    color: #303030;
+    font-weight: bold;
+}
+
+.header-logo img {
+    width: 150px;
+}
+
+/* header end */
+
+
+/* banner start */
+.banner {
+    background: radial-gradient(#36363680, #69696920), url(../media/fone_2.jpg);
+    height: 80vh;
+    background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text-block {
+    display: flex;
+    align-items: end;
+    gap: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.text-block h1 {
+    font-size: 84px;
+    text-align: center;
+}
+
+.text-block span {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+/* banner end */
+
+/* contacts start */
+.contacts {
+    margin-top: 120px;
+    background-color: #ff7a7b;
+    height: 200px;
+    border-radius: 20px;
+    padding: 30px;
+    color: #f6f6f6;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.contacts-block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contacts-block h3 {
+    font-size: 24px;
+}
+
+.contacts-block p {
+    width: 600px;
+    font-size: 18px;
+}
+/* contacts end */
+
+/* tabs start */
+.tabs__block {
+    padding: 120px 0 300px;
+}
+.title h2 {
+    font-size: 40px;
+    color: #444444;
+    padding-bottom: 40px;
+    font-family: 'Vetrino';
+    text-transform: uppercase;
+}
+
+.tabs {
+    position: relative;
+    font-family: 'Manrope';
+}
+
+.tabs__btns {
+    display: flex;
+    gap: 1px;
+}
+
+.tab__btn {
+    cursor: pointer;
+    background-color: rgb(253, 222, 163);
+    padding: 10px;
+    width: 180px;
+    text-align: center;
+    height: 60px;
+    transform: translateY(15px);
+    color: #272424;
+    font-size: 20px;
+    border-radius: 5px 5px 0 0;
+}
+
+.tab__btn.active {
+    background-color: #e4af87;
+    transform: translateY(5px);
+    height: 60px;
+    transition: .3s ease-in;
+    font-size: 22px;
+    border-radius: 20px 20px 0 0;
+}
+
+
+.tab__text {
+    position: absolute;
+    top: 100%;
+    padding: 15px 20px;
+    background-color: #e4af87;
+    max-width: 700px;
+    visibility: hidden;
+    border-radius: 0 10px 10px 10px;
+}
+
+.tab__text img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+.tab__text.active {
+    visibility: visible;
+}
+
+.tab__text h2 {
+    color: #493c31;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.tab__text p {
+    color: #271e16;
+    font-size: 18px;
+}
+
+/* tabs end */
+
+
+.item-view {
+    background-color: #e4af87;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 50px;
+    right: 250px;
+    display: none;
+    color: #2b1809;
+}
+
+.item-view.show{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
